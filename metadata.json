@@ -1,0 +1,6 @@
+{
+  "name": "Saheli Eyebrow Threading Waiver Form",
+  "description": "Professional luxury digital waiver app with support for five locations, signature capture, local backup dashboard, and ready-to-deploy Google Apps Script integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

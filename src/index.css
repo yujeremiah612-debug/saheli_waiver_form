@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=HK+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "HK Grotesk", "Helvetica Neue", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-50: #FCFAF7;
+  --color-gold-100: #F7F3EA;
+  --color-gold-200: #E0C896;
+  --color-gold-300: #D6B778;
+  --color-gold-400: #C5A059;
+  --color-gold-500: #C5A059;
+  --color-gold-600: #A88444;
+  --color-gold-700: #8A682D;
+  --color-gold-800: #6B4E1A;
+  --color-gold-900: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-[#FDFCFB] text-[#1A1A1A] antialiased font-sans;
+  }
+}
+
+/* Custom styles matching the Artistic Flair aesthetic */
+.display-serif {
+  @apply font-serif italic;
+}
+
+.luxury-border {
+  @apply border border-[#C5A059];
+}
+
+.gold-text {
+  @apply text-[#C5A059];
+}
+
+.label-caps {
+  @apply text-[10px] uppercase tracking-[0.15em] font-bold text-[#C5A059] block mb-1;
+}
+
+.input-field {
+  @apply border-0 border-b border-neutral-200 py-2.5 w-full text-sm bg-transparent outline-none transition-all placeholder:text-neutral-400 focus:border-[#C5A059] focus:ring-0 rounded-none;
+}
+
+.waiver-scroll {
+  @apply h-[200px] overflow-y-auto text-[12px] leading-relaxed pr-3 text-neutral-600 scrollbar-thin scrollbar-thumb-gold-400 scrollbar-track-transparent;
+}
+
+/* Customize thin scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #E0C896;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
